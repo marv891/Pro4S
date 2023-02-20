@@ -1,0 +1,1164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1082</width>
+    <height>710</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>710</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>782</width>
+        <height>579</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>2000</width>
+        <height>2000</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>3</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QLabel" name="VideoStream">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>651</width>
+         <height>561</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>800</width>
+         <height>613</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>CrossCursor</cursorShape>
+       </property>
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="toolTip">
+        <string>Video Frames from Camera</string>
+       </property>
+       <property name="statusTip">
+        <string>Frames Feed</string>
+       </property>
+       <property name="whatsThis">
+        <string>Hello2</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>1</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../../../PycharmProjects/pythonProject2/bilder/20220113_000_Anwesend_2.jpg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="CoordinatesDisplay">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>400</y>
+         <width>171</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../../../PycharmProjects/pythonProject2/koordinaten_system_final.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QScrollBar" name="verticalScrollBar">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0,0,0,0,0,0">
+      <property name="spacing">
+       <number>7</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetFixedSize</enum>
+      </property>
+      <property name="leftMargin">
+       <number>8</number>
+      </property>
+      <property name="topMargin">
+       <number>8</number>
+      </property>
+      <property name="rightMargin">
+       <number>8</number>
+      </property>
+      <property name="bottomMargin">
+       <number>8</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="Snapshot">
+        <property name="statusTip">
+         <string>Allows to capture and save the current frame</string>
+        </property>
+        <property name="text">
+         <string>Save Frame</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>311</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ZoomInButton">
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="statusTip">
+         <string>zooming into frame</string>
+        </property>
+        <property name="text">
+         <string>-</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSlider" name="zoomSlider">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ZoomOutButton">
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="statusTip">
+         <string>zoom out of frame</string>
+        </property>
+        <property name="text">
+         <string>+</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="time">
+        <property name="text">
+         <string>Time</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="Timedisplay">
+        <property name="statusTip">
+         <string>Local time</string>
+        </property>
+        <property name="text">
+         <string>00:00:00</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="Frames">
+        <property name="minimumSize">
+         <size>
+          <width>55</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Frames/s:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="Framenumbers">
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>200</height>
+         </size>
+        </property>
+        <property name="statusTip">
+         <string>Numbers of frame passed, max 9999 befor reset</string>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="parameter_Box">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>267</width>
+        <height>561</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>267</width>
+        <height>618</height>
+       </size>
+      </property>
+      <property name="statusTip">
+       <string>Parameter Control</string>
+      </property>
+      <property name="accessibleDescription">
+       <string>deuwigbw</string>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <widget class="QWidget" name="Beginner_Parameter">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>400</width>
+         <height>1000</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>1000</width>
+         <height>1027</height>
+        </size>
+       </property>
+       <attribute name="title">
+        <string>Standard</string>
+       </attribute>
+       <widget class="QWidget" name="verticalLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>261</width>
+          <height>411</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="StandardLayout" stretch="0,0,0,0,0,0,0,0,0,0,0,0,0">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <property name="leftMargin">
+          <number>8</number>
+         </property>
+         <property name="topMargin">
+          <number>8</number>
+         </property>
+         <property name="rightMargin">
+          <number>8</number>
+         </property>
+         <property name="bottomMargin">
+          <number>8</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <property name="spacing">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>Feature</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="line_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>Value</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="line">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QCheckBox" name="Auto">
+             <property name="statusTip">
+              <string>Set Atomatic function adjustement for Exposure time and Gain</string>
+             </property>
+             <property name="accessibleDescription">
+              <string>fhewiogbv</string>
+             </property>
+             <property name="text">
+              <string>Auto </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="Manual">
+             <property name="statusTip">
+              <string>Manual adjustements of parameters</string>
+             </property>
+             <property name="text">
+              <string>Manual</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Exposure Time</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSlider" name="Exposure_Time">
+             <property name="acceptDrops">
+              <bool>false</bool>
+             </property>
+             <property name="maximum">
+              <number>40000</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="Exposure_Box">
+             <property name="suffix">
+              <string>µs</string>
+             </property>
+             <property name="maximum">
+              <number>40000</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>Gain</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSlider" name="Gain">
+             <property name="maximum">
+              <number>250</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="Gain_Box">
+             <property name="suffix">
+              <string>db</string>
+             </property>
+             <property name="maximum">
+              <number>250</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>Target Brightness</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSlider" name="TargetBrightnessslider">
+             <property name="maximum">
+              <number>250</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="TargetBrightnessbox">
+             <property name="suffix">
+              <string>%</string>
+             </property>
+             <property name="maximum">
+              <number>100</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="line_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="Coordinates">
+           <property name="statusTip">
+            <string>show the Coordinates on screen</string>
+           </property>
+           <property name="text">
+            <string>Coordinates</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>Offset Readout</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <property name="spacing">
+            <number>7</number>
+           </property>
+           <property name="sizeConstraint">
+            <enum>QLayout::SetMaximumSize</enum>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>T Axis</string>
+             </property>
+            </widget>
+           </item>
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QPlainTextEdit" name="TAxisReadOut">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>28</height>
+              </size>
+             </property>
+             <property name="statusTip">
+              <string>Approximate T Axis difference with laser</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_9">
+             <property name="text">
+              <string>mm</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <property name="sizeConstraint">
+            <enum>QLayout::SetMaximumSize</enum>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_10">
+             <property name="text">
+              <string>U Axis</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPlainTextEdit" name="UAxisReadOut">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>28</height>
+              </size>
+             </property>
+             <property name="statusTip">
+              <string>Approximate U Axis difference with laser</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>mm</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_11">
+           <item>
+            <widget class="QPushButton" name="ReadOffsetButton">
+             <property name="statusTip">
+              <string>Start the evaluation process of current frame</string>
+             </property>
+             <property name="text">
+              <string>read Offset</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Parameter_BoxPage2">
+       <attribute name="title">
+        <string>Guru</string>
+       </attribute>
+       <widget class="QWidget" name="verticalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>261</width>
+          <height>468</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="Gurulayout" stretch="0,0,0,0,0,0,0,0,0,0,0">
+         <property name="spacing">
+          <number>7</number>
+         </property>
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <property name="leftMargin">
+          <number>8</number>
+         </property>
+         <property name="topMargin">
+          <number>8</number>
+         </property>
+         <property name="rightMargin">
+          <number>8</number>
+         </property>
+         <property name="bottomMargin">
+          <number>8</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_12">
+           <property name="leftMargin">
+            <number>7</number>
+           </property>
+           <property name="topMargin">
+            <number>7</number>
+           </property>
+           <property name="rightMargin">
+            <number>7</number>
+           </property>
+           <property name="bottomMargin">
+            <number>7</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="SignInButton">
+             <property name="statusTip">
+              <string>Gain advanced access to features</string>
+             </property>
+             <property name="text">
+              <string>Sign in</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="LogOut">
+             <property name="statusTip">
+              <string>Disable advanced access to features</string>
+             </property>
+             <property name="text">
+              <string>Sign out</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="line_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="FeatureList">
+           <property name="text">
+            <string>Feature List</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="FeatureBox">
+           <property name="statusTip">
+            <string>List of camera features</string>
+           </property>
+           <property name="editable">
+            <bool>false</bool>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <property name="maxVisibleItems">
+            <number>20</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>Choose Feature</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="GuruFeatureName">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0">
+           <property name="spacing">
+            <number>7</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>7</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>7</number>
+           </property>
+           <item>
+            <widget class="QCheckBox" name="BoolBox">
+             <property name="text">
+              <string>CheckBox</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="IntSpinBox"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPlainTextEdit" name="StringBox">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>28</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="EnumBox"/>
+         </item>
+         <item>
+          <widget class="QSlider" name="IntSlider">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="DescriptionGuru">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>1</width>
+             <height>113</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>305</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Description</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QTextBrowser" name="ErrorOut">
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>200</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Error</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QScrollBar" name="horizontalScrollBar">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1082</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionLoad_image"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuInit">
+    <property name="title">
+     <string>Init</string>
+    </property>
+    <addaction name="actionDefault"/>
+    <addaction name="actionLoad_custom"/>
+    <addaction name="actionsave"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuInit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionLoad_image">
+   <property name="text">
+    <string>Load image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="text">
+    <string>Save as</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F4</string>
+   </property>
+  </action>
+  <action name="actionDefault">
+   <property name="text">
+    <string>Load default</string>
+   </property>
+  </action>
+  <action name="actionLoad_custom">
+   <property name="text">
+    <string>Load custom</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Exposure_Time</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Exposure_Box</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>201</x>
+     <y>137</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>141</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Exposure_Box</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Exposure_Time</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>259</x>
+     <y>141</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>201</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Gain</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Gain_Box</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>209</x>
+     <y>168</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>172</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Gain_Box</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Gain</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>259</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>209</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>TargetBrightnessslider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>TargetBrightnessbox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>210</x>
+     <y>199</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>203</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>TargetBrightnessbox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>TargetBrightnessslider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>259</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>210</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>IntSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>IntSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>107</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>107</x>
+     <y>72</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>IntSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>IntSpinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>107</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>107</x>
+     <y>72</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
